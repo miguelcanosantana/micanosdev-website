@@ -30,23 +30,30 @@ localeSelector.addEventListener("change", (event) =>
     }
 )
 
-//Set the default language to the client's browser one if no url param has been specified
+//Set the default language to the client's browser one if no previous one was saved
 window.addEventListener("load", (event) => {
     
-    const preferedLang = navigator.language
 
-    if (preferedLang.startsWith("es")) {
-        localeSelector.value = "es"
-        setLocale("es")
-    }
-    else {
-        localeSelector.value = "en"
-        setLocale("en")
-    }
+    const previousLocale = localStorage.getItem("previousLocale");
 
+    if (previousLocale == null) {
+
+        const preferedLang = navigator.language
+
+        if (preferedLang.startsWith("es")) {
+            localeSelector.value = "es"
+            setLocale("es")
+        }
+        else {
+            localeSelector.value = "en"
+            setLocale("en")
+        }
+
+    } else {
+        localeSelector.value = previousLocale
+        setLocale(previousLocale)
+    }
 });
-
-
 
 
 function setLocale(locale) {
@@ -75,4 +82,6 @@ function setLocale(locale) {
             break;
     }
 
+    //Save locale in localStorage so next time loading page it can be loaded
+    localStorage.setItem("previousLocale", locale)
 }
