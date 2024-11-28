@@ -19,12 +19,8 @@ const localization = {
     }
 }
 
-
-//ALL LOCALIZABLE PAGE ELEMENTS
+//Setup locale selector
 const localizableNodeList = document.querySelectorAll("[id^=localizable-]");
-
-console.log(localizableNodeList)
-
 
 const localeSelector = document.querySelector("#locale-selector")
 
@@ -33,6 +29,24 @@ localeSelector.addEventListener("change", (event) =>
         setLocale(event.target.value)
     }
 )
+
+//Set the default language to the client's browser one if no url param has been specified
+window.addEventListener("load", (event) => {
+    
+    const preferedLang = navigator.language
+
+    if (preferedLang.startsWith("es")) {
+        localeSelector.value = "es"
+        setLocale("es")
+    }
+    else {
+        localeSelector.value = "en"
+        setLocale("en")
+    }
+
+});
+
+
 
 
 function setLocale(locale) {
