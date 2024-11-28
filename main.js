@@ -33,7 +33,6 @@ localeSelector.addEventListener("change", (event) =>
 //Set the default language to the client's browser one if no previous one was saved
 window.addEventListener("load", (event) => {
     
-
     const previousLocale = localStorage.getItem("previousLocale");
 
     if (previousLocale == null) {
