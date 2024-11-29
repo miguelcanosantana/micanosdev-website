@@ -6,7 +6,9 @@ const localization = {
         //Hero Section
         hero_hello : "Hello!",
         hero_im : "I'm Miguel",
-        hero_aka: "a.k.a Micanos DEV"
+        hero_aka: "a.k.a Micanos DEV",
+        hero_full_stack: "I'm passionate about being a full-stack developer and learning new technologies to apply them to the projects I craft.",
+        hero_button_know_more: "Know more"
     },
 
     es: {
@@ -15,7 +17,9 @@ const localization = {
         //Hero Section
         hero_hello : "Hola!",
         hero_im : "Soy Miguel",
-        hero_aka: "alias Micanos DEV"
+        hero_aka: "alias Micanos DEV",
+        hero_full_stack: "Me apasiona ser desarrollador full-stack y aprender nuevas tecnologías para poder aplicarlas a los proyectos que realizo.",
+        hero_button_know_more: "Saber más"
     }
 }
 
