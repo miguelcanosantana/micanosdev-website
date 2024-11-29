@@ -5,8 +5,8 @@ const localization = {
 
         //Hero Section
         hero_hello : "Hello!",
-        hero_im : "I'm Micanos DEV",
-        hero_aka: "a.k.a Miguel Cano"
+        hero_im : "I'm Miguel",
+        hero_aka: "a.k.a Micanos DEV"
     },
 
     es: {
@@ -14,8 +14,8 @@ const localization = {
 
         //Hero Section
         hero_hello : "Hola!",
-        hero_im : "Soy Micanos DEV",
-        hero_aka: "también conocido como Miguel Cano"
+        hero_im : "Soy Miguel",
+        hero_aka: "alias Micanos DEV"
     }
 }
 
