@@ -21,6 +21,7 @@ body {
     background-color: var(--bg-200);
 }
 
+/* Primary button */
 .btn-primary,
 .btn-primary:focus,
 .btn-primary:active {
