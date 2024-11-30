@@ -32,9 +32,9 @@ body {
 
 .btn-primary:hover
  {
-    border-color: var(--accent-100) !important;
     box-shadow: 0px 0px 10px 0px var(--accent-100) !important;
     background: linear-gradient(180deg, var(--accent-200) 0%, var(--accent-100) 10%); 
+
 }
 
 
