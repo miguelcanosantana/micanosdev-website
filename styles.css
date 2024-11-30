@@ -38,7 +38,9 @@ body {
 
 }
 
-
+.tech-image {
+    margin-bottom: 20px;
+}
 
 #locale-selector {
     max-width: 70px;
