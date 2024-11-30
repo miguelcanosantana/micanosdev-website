@@ -7,6 +7,7 @@
     --accent-200:#ffe0c8;
     --text-100:#FFFFFF;
     --text-200:#e0e0e0;
+    --bg-85:#07121a;
     --bg-100:#0D1F2D;
     --bg-200:#1d2e3d;
     --bg-300:#354656; 
@@ -19,6 +20,18 @@ body {
 
 .navbar {
     background-color: var(--bg-200);
+}
+
+.spacer-sm {
+    padding-top: 5px;
+}
+
+.spacer-md {
+    padding-top: 30px;
+}
+
+.spacer-lg {
+    padding-top: 80px;
 }
 
 /* Primary button */
@@ -40,6 +53,10 @@ body {
 
 .tech-image {
     margin-bottom: 20px;
+}
+
+.dark-section {
+    background-color: var(--bg-85);
 }
 
 #locale-selector {
