@@ -1,6 +1,7 @@
 :root {
     --primary-100:#0D6E6E;
     --primary-200:#4a9d9c;
+    --primary-250:#67d6d6;
     --primary-300:#afffff;
     --accent-50:#bb2a2a;
     --accent-100:#FF3D3D;
@@ -53,6 +54,9 @@ body {
 
 .tech-image {
     margin-bottom: 20px;
+    background-color: var(--text-100) !important;
+    border-color: var(--primary-250) !important;
+    border-width: 10px !important;
 }
 
 .dark-section {
@@ -61,4 +65,8 @@ body {
 
 #locale-selector {
     max-width: 70px;
+}
+
+#localizable-tech_skills_title {
+    color: var(--primary-300) !important;
 }
