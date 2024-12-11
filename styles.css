@@ -59,6 +59,7 @@ body {
     background-color: var(--text-100) !important;
     border-color: var(--primary-250) !important;
     border-width: 10px !important;
+    cursor: pointer;
 }
 
 .dark-section {

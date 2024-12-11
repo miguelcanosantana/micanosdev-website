@@ -86,15 +86,15 @@
       <div class="row justify-content-center">
   
         <div class="col-4 col-sm-3 col-md-2 col-xl-1">
-          <img src="media/csharp.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt="C#">
+          <img onclick="showTechSkillAlert('tech_alert_csharp')" src="media/csharp.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt="C#">
         </div>
   
         <div class="col-4 col-sm-3 col-md-2 col-xl-1">
-          <img src="media/net.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt=".NET">
+          <img onclick="showTechSkillAlert('tech_alert_net')" src="media/net.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt=".NET">
         </div>
   
         <div class="col-4 col-sm-3 col-md-2 col-xl-1">
-          <img src="media/blazor.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt="Blazor">
+          <img onclick="showTechSkillAlert('tech_alert_blazor')" src="media/blazor.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt="Blazor">
         </div>
   
         <div class="col-4 col-sm-3 col-md-2 col-xl-1">
@@ -129,8 +129,15 @@
           <img src="media/lua.webp" class="tech-image img-thumbnail rounded-circle border border-4" alt="Lua">
         </div>
         
-        
       </div>
+    </div>
+
+    <div class="spacer-md"></div>
+
+    <div id="tech-skill-alert" class="alert alert-primary ms-2 ms-sm-5 me-2 me-sm-5" role="alert">
+      <h4 id="tech-skill-alert-title" class="alert-heading">tech-skill-alert-title</h4>
+      <hr>
+      <p id="tech-skill-alert-explanation" class="mb-0">tech-skill-alert-explanation</p>
     </div>
 
     <div class="spacer-lg"></div>
