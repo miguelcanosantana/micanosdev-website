@@ -22,6 +22,12 @@ const localization = {
 
         tech_alert_blazor_title: "Blazor",
         tech_alert_blazor_explanation: "My newest projects in the Cirsa Company were developer in Blazor. <br> The hottest tech just from the oven, newer than a typical .NET Core app and using a similar approach to Angular. <br> I've developed server sided rendered and client web assembly rendered apps using it. ",
+
+        tech_alert_unity_title: "Unity",
+        tech_alert_unity_explanation: "I'm passionate about developing videogames in different tools, one of them being the Unity Engine, which forms part of the .NET ecosystem too.",
+
+        tech_alert_android_title: "Android",
+        tech_alert_android_explanation: "In my studies I've touched the development of native Android apps using Java, nowadays I prefer Kotlin. <br> I have experience developing apps with Android XML Layouts, and would like to try Jetpack compose or even Compose multiplatform in a future. <br><br> I've also published 2 apps at the moment of writing this in the play store. <br> <br> <a href='https://play.google.com/store/apps/dev?id=7644279889113215830' target='_blank' rel='noopener noreferrer'> Check them here</a>",
     },
 
     es: {
