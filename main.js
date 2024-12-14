@@ -182,8 +182,13 @@ function showTechSkillAlert(textKey) {
     alertTitle.innerHTML = localization[locale][textKey + "_title"];
     alertContent.innerHTML = localization[locale][textKey + "_explanation"];
 
-    //alertTitle.textContent = 
-
     alert.style.display = "block";
     alert.scrollIntoView()
+
+    //Add the animation and remove the class to reset it
+    alert.classList.add("flip-in-ver-right")
+    alert.onanimationend = function() {
+        this.classList.remove('flip-in-ver-right');
+    }
+    
 }
