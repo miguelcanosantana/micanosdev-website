@@ -170,6 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("tech-skill-alert").style.display = "none";
 });
 
+var isTechSkillAlertAlreadyShown = false;
 
 //Show text in the tech skill alert depending of the selected one and locale
 function showTechSkillAlert(textKey) {
@@ -179,16 +180,46 @@ function showTechSkillAlert(textKey) {
     var alertContent = document.getElementById("tech-skill-alert-explanation");
     var locale = localStorage.getItem("previousLocale");
 
-    alertTitle.innerHTML = localization[locale][textKey + "_title"];
-    alertContent.innerHTML = localization[locale][textKey + "_explanation"];
+    //If its the first time do only a entry animation, else do exit and then entry
+    if (!isTechSkillAlertAlreadyShown) {
 
-    alert.style.display = "block";
-    alert.scrollIntoView()
+        isTechSkillAlertAlreadyShown = true;
 
-    //Add the animation and remove the class to reset it
-    alert.classList.add("flip-in-ver-right")
-    alert.onanimationend = function() {
-        this.classList.remove('flip-in-ver-right');
+        alertTitle.innerHTML = localization[locale][textKey + "_title"];
+        alertContent.innerHTML = localization[locale][textKey + "_explanation"];
+    
+        alert.style.display = "block";
+        alert.scrollIntoView()
+    
+        //Add the animation and remove the class to reset it
+        alert.classList.add("flip-in-ver-right")
+        alert.onanimationend = function() {
+            this.classList.remove('flip-in-ver-right');
+        }
+
+    } else {
+
+        alert.scrollIntoView()
+        alert.classList.add("slide-out-bck-center")
+
+        alert.onanimationend = function() {
+
+            this.classList.remove('slide-out-bck-center');
+
+            alertTitle.innerHTML = localization[locale][textKey + "_title"];
+            alertContent.innerHTML = localization[locale][textKey + "_explanation"];
+
+            alert.classList.add("flip-in-ver-right")
+            alert.onanimationend = function() {
+                this.classList.remove('flip-in-ver-right');
+                alert.scrollIntoView()
+            }
+        }
+
     }
+
+
+
+
     
 }
