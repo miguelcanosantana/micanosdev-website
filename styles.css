@@ -59,7 +59,13 @@ body {
     background-color: var(--text-100) !important;
     border-color: var(--primary-250) !important;
     border-width: 10px !important;
+    transition : border-width 140ms ease-out, border-color 500ms ease-out;
     cursor: pointer;
+}
+
+.tech-image:hover {
+    border-color: var(--accent-100) !important;
+    border-width: 6px !important;
 }
 
 .dark-section {
