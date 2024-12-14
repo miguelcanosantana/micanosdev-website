@@ -171,9 +171,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 var isTechSkillAlertAlreadyShown = false;
+var transitionDebounce = false
 
 //Show text in the tech skill alert depending of the selected one and locale
 function showTechSkillAlert(textKey) {
+
+    if (transitionDebounce) {
+        return;
+    }
+
+    transitionDebounce = true;
 
     var alert = document.getElementById("tech-skill-alert");
     var alertTitle = document.getElementById("tech-skill-alert-title");
@@ -195,6 +202,7 @@ function showTechSkillAlert(textKey) {
         alert.classList.add("flip-in-ver-right")
         alert.onanimationend = function() {
             this.classList.remove('flip-in-ver-right');
+            transitionDebounce = false;
         }
 
     } else {
@@ -212,7 +220,8 @@ function showTechSkillAlert(textKey) {
             alert.classList.add("flip-in-ver-right")
             alert.onanimationend = function() {
                 this.classList.remove('flip-in-ver-right');
-                alert.scrollIntoView()
+                transitionDebounce = false;
+                alert.scrollIntoView();
             }
         }
 
