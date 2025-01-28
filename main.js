@@ -52,6 +52,13 @@ const localization = {
 
         tech_alert_lua_title: "Lua, Luau and Roblox",
         tech_alert_lua_explanation: "As a game developer too, I discovered the metaverse of Roblox and it's programming tools. <br> Roblox uses Luau, which is Lua with extended capabilities like better types support. <br><br> I made a game in the platform, it wasn't a hit but made me learn a lot of concepts about game design too. <br><br> <a href='https://bleepingdragon.com/markdown/games/DontStepThere/' target='_blank' rel='noopener noreferrer'> Check an article I made about it here</a>",
+    
+        //Projects
+        projects_title: "Projects",
+
+        //Contact
+        contact_info_title: "Contact Info",
+    
     },
 
     es: {
@@ -106,7 +113,13 @@ const localization = {
         tech_alert_plsql_explanation: "Cuando trabajaba en Cirsa, tuve que traducir muchas consultas de Oracle PL/SQL a Entity Framework, pero también creé algunas consultas nuevas en PL/SQL. <br><br>Más tarde, aprendí a gestionar aspectos de bases de datos como tablas y relaciones en diferentes entornos como pruebas, integración, producción...",
 
         tech_alert_lua_title: "Lua, Luau y Roblox",
-        tech_alert_lua_explanation: "Como desarrollador de juegos, descubrí el metaverso de Roblox y sus herramientas de programación. <br> Roblox utiliza Luau, que es Lua con capacidades extendidas como un mejor soporte para tipos. <br><br> Desarrollé un juego en dicha plataforma, no fue un éxito, pero me enseñó muchos conceptos sobre diseño de juegos. <br><br> <a href='https://bleepingdragon.com/markdown/games/DontStepThere/' target='_blank' rel='noopener noreferrer'> Mira un artículo que escribí sobre el juego aquí</a>"
+        tech_alert_lua_explanation: "Como desarrollador de juegos, descubrí el metaverso de Roblox y sus herramientas de programación. <br> Roblox utiliza Luau, que es Lua con capacidades extendidas como un mejor soporte para tipos. <br><br> Desarrollé un juego en dicha plataforma, no fue un éxito, pero me enseñó muchos conceptos sobre diseño de juegos. <br><br> <a href='https://bleepingdragon.com/markdown/games/DontStepThere/' target='_blank' rel='noopener noreferrer'> Mira un artículo que escribí sobre el juego aquí</a>",
+
+        //Projects
+        projects_title: "Proyectos",
+
+        //Contact
+        contact_info_title: "Contactar",
     }
 }
 

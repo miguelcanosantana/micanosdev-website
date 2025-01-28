@@ -9,6 +9,7 @@
     --text-100:#FFFFFF;
     --text-200:#e0e0e0;
     --bg-85:#07121a;
+    --bg-95:#0b1b27;
     --bg-100:#0D1F2D;
     --bg-200:#1d2e3d;
     --bg-300:#354656; 
@@ -68,8 +69,12 @@ body {
     border-width: 6px !important;
 }
 
+.normal-section {
+  background-color: var(--bg-100);
+}
+
 .dark-section {
-    background-color: var(--bg-85);
+    background-color: var(--bg-95);
 }
 
 #locale-selector {
