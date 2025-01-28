@@ -3,6 +3,12 @@ const localization = {
     en: {
         //INDEX
 
+        //Navbar
+        nav_home: "Home",
+        nav_skills: "Skills",
+        nav_projects: "Projects",
+        nav_contact: "Contact Info",
+
         //Hero Section
         hero_hello : "Hello!",
         hero_im : "I'm Miguel",
@@ -50,6 +56,12 @@ const localization = {
 
     es: {
         //INDEX
+
+        //Navbar
+        nav_home: "Inicio",
+        nav_skills: "Skills",
+        nav_projects: "Proyectos",
+        nav_contact: "Contactar",
 
         //Hero Section
         hero_hello : "Hola!",
