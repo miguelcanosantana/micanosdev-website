@@ -85,6 +85,10 @@ body {
     color: var(--primary-300) !important;
 }
 
+#contact-mail-form {
+  background-color: var(--bg-85);
+}
+
 /* ANIMATIONS */
 
 .slide-out-bck-center {

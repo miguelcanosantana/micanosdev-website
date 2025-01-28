@@ -58,6 +58,10 @@ const localization = {
 
         //Contact
         contact_info_title: "Contact Info",
+        contact_info_subject: "Subject",
+        contact_info_content: "Content",
+        contact_info_send_mail: "Send email",
+        
     
     },
 
@@ -120,6 +124,9 @@ const localization = {
 
         //Contact
         contact_info_title: "Contactar",
+        contact_info_subject: "Asunto",
+        contact_info_content: "Contenido",
+        contact_info_send_mail: "Enviar email",
     }
 }
 
@@ -221,7 +228,7 @@ function showTechSkillAlert(textKey) {
         alertContent.innerHTML = localization[locale][textKey + "_explanation"];
     
         alert.style.display = "block";
-        alert.scrollIntoView()
+        alert.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'start' })
     
         //Add the animation and remove the class to reset it
         alert.classList.add("flip-in-ver-right")
@@ -232,7 +239,7 @@ function showTechSkillAlert(textKey) {
 
     } else {
 
-        alert.scrollIntoView()
+        alert.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'start' })
         alert.classList.add("slide-out-bck-center")
 
         alert.onanimationend = function() {
@@ -246,7 +253,7 @@ function showTechSkillAlert(textKey) {
             alert.onanimationend = function() {
                 this.classList.remove('flip-in-ver-right');
                 transitionDebounce = false;
-                alert.scrollIntoView();
+                alert.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'start' })
             }
         }
 
@@ -256,4 +263,19 @@ function showTechSkillAlert(textKey) {
 
 
     
+}
+
+
+//Send mail
+function sendMail() {
+
+    const subject = document.getElementById("subjectForm").value;
+    const message = document.getElementById("contentForm").value;
+
+    if (subject == "" || message == "") {
+        alert("Please fill all the fields")
+        return;
+    }
+
+    window.open(`mailto:miguelcanosantana@gmail.com?subject=${subject}&body=${message}`);
 }
